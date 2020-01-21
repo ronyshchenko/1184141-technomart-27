@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Кирилл Волков](https://up.htmlacademy.ru/htmlcss/27/user/1184141).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Шершнев`(https://htmlacademy.ru/profile/shv_sergey).
 
 ---
 
