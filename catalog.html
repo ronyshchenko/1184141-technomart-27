@@ -8,10 +8,11 @@
     <header>
       <div>
         <a href="index.html">
-          <img src="img/logo-tehnomart-up.png" width="109" height="19" alt="Техномарт">
+          <img src="img/logo-tehnomart-up.png" width="109" height="19" alt="Логотип Техномарт">
         </a>
-        <span>Поиск</span>
-        <!-- Здесь будет форма поиска --> 
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="search" name="search" id="search-field" placeholder="Поиск:">
+        </form>
         <a href="#">Закладки: 0</a>
         <a href="#">Корзина: 10</a>
         <a href="#">Оформить заказ</a>
@@ -45,7 +46,7 @@
       <ul>
         <li>
           <a href="index.html">
-            <img src="home.png" width="25" height="25" alt="Главная страница">
+            <img src="home.png" width="25" height="25" alt="Переход на главную страницу">
           </a>
         </li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -56,33 +57,55 @@
 
       <section>
         <h2>Фильтр товаров:</h2>
-        
-        <!--Тут будет форма фильтра-->
-
-        <h3>Производители:</h3>
-        <ul>
-          <li>Bosh</li>
-          <li>Интрерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <h3>Питание:</h3>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
-        <span>Показать</span>
-         <!--Тут будет форма-->
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          
+        <!-- Тут начало формы -->
+          <h3>Производители:</h3>
+          <ul>
+            <li>
+              <input type="checkbox" name="Bosh" id="check-1">
+              <label for="check-1">Bosh</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Interskol" id="check-2">
+              <label for="check-2">Интрерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Makita" id="check-3">
+              <label for="check-3">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Dewalt" id="check-4">
+              <label for="check-4">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="Hitachi" id="check-5">
+              <label for="check-5">Hitachi</label>
+            </li>
+          </ul>
+          <h3>Питание:</h3>
+          <ul>
+            <li>
+              <input type="radio" name="supply-type" id="radio-1" value="Аккумуляторные"> 
+              <label for="radio-1">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="supply-type" id="radio-2" value="Сетевые"> 
+              <label for="radio-2">Сетевые</label>
+            </li>
+          </ul>
+          <button type="submit">Показать</button>
+        </form>
       </section>
+      
       
       <section>
         <h2>Сотрировка:</h2>
-         <!--Тут будет форма сортировки-->
+         <!--Тут будет сортировка-->
       </section>
       
       <section>
-        <h2>Список перфораторов</h2> <!--Скрыть от пользователя-->
+        <h2 class="visually-hidden">Список перфораторов</h2>
         <ul>
           <li>
             <h3>Перфоратор BOSCH<br>
@@ -165,7 +188,7 @@
       <section>
         <div>
           <a href="index.html">
-            <img src="img/logo-tehnomart-down.png" width="138" height="23" alt="Техномарт">
+            <img src="img/logo-tehnomart-down.png" width="138" height="23" alt="Логотип Техномарт">
           </a>  
           <ul>
             <li><a href="#">Компания</a></li>
@@ -211,6 +234,14 @@
         </div>
       </section>
     </footer>
+    
+    <section>
+      <h2>Товар добавлен в коризину!</h2>
+      <div>
+        <a href="#">Оформить заказ</a>
+        <button type="button">Продолжить покупки</button>
+      </div>
+    </section>
   </body>   
     
 </html>
