@@ -8,10 +8,11 @@
     <header>
       <div>
         <a href="index.html">
-          <img src="img/logo-tehnomart-up.png" width="109" height="19" alt="Техномарт">
+          <img src="img/logo-tehnomart-up.png" width="109" height="19" alt="Логотип Техномарт">
         </a>  
-        <span>Поиск</span>
-        <!-- Здесь будет форма поиска --> 
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="search" name="search" id="search-field" placeholder="Поиск:">
+        </form>
         <a href="#">Закладки: 0</a>
         <a href="#">Корзина: 0</a>
         <a href="#">Оформить заказ</a>
@@ -41,7 +42,7 @@
     </header>
  
     <main>
-      <h1>Интеренет-магазин Техномарт</h1>  <!--Скрыть для пользователя-->
+      <h1 class="visually-hidden">Интеренет-магазин Техномарт</h1> 
 
       <!--тут будет слайдер, популярные товары и производители, блок с сервисами и доставкой-->
 
@@ -68,11 +69,10 @@
           заехав в наш офис:
         </p>
         <button type="button">  <!--тут будет разворачиваться карта-->
-          <img src="img/map.png" width="300" height="158" alt="Карта проезда">
+          <img src="img/map.png" width="300" height="158" alt="Карта проезда в офис Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </button>
-        <button type="button">Заблудились? Напишите нам!
-          <!--тут будет форма обратной связи-->
-        </button>
+        <img src="img/map2.png" width="940" height="446" alt="Карта проезда в офис Техномарт: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <button type="button">Заблудились? Напишите нам!</button>
       </section>
     </main>
     
@@ -80,7 +80,7 @@
       <section>
         <div>
           <a href="index.html">
-            <img src="img/logo-tehnomart-down.png" width="138" height="23" alt="Техномарт">
+            <img src="img/logo-tehnomart-down.png" width="138" height="23" alt="Логотип Техномарт">
           </a> 
           <ul>
             <li><a href="#">Компания</a></li>
@@ -126,6 +126,23 @@
         </div>
       </section>
     </footer>
+    
+    <section>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <p>
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+        </p>
+        <p>
+          <label for="e-mail-field">Ваш e-mail:</label>
+          <input type="e-mail" name="e-mail" id="e-mail-field" placeholder="email@example.com" required>
+        </p>
+        <p>Текст письма:</p>
+        <textarea rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+        
+    </section>
   </body>   
     
 </html>
